@@ -1,11 +1,5 @@
 /***********************************************************************************
- cellularautomata_1D.h provides a simple class of one-dimensional cellular automata. 
- Elementary cellular automata have two possible values for each cell (0 or 1), 
- and rules that depend only on nearest neighbor values.
-
- Ref:	Weisstein, Eric W. "Elementary Cellular Automaton." 
- 	From MathWorld--A Wolfram Web Resource:
-	https://mathworld.wolfram.com/ElementaryCellularAutomaton.html
+ gameoflife.h provides a simple class of two-dimensional Game of Life. 
  
  By:  Mohammed Maher Abdelrahim Mohammed
       SUDAN UNIVERSITY OF SCIENCE & TECHNOLOGY
@@ -24,14 +18,15 @@
 //###########################################################################
 class GameofLife {
 public:
-	grid<int,15,15> Board;
-	grid<int,15,15> Next;
-	int cols=15;
 	int rows=15;
 	GameofLife();
 	void Generate();
 	void Draw();
 	~GameofLife();
+private:
+	grid<int,15,15> Board;
+	grid<int,15,15> Next;
+	int cols=15;
 };
 //###########################################################################
 
@@ -44,7 +39,7 @@ GameofLife::GameofLife()
 	{
 		for(int j =0; j<rows; j++)
 		{
-    			Board. SetPoint(i,j,rand()%2);
+    			Board.SetPoint(i,j,rand()%2);
 		}
 	}
 }
