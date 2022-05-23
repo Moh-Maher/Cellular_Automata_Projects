@@ -3,8 +3,7 @@
  to generate the complete set of 256 (rules 0-255) elementary cellular automata. 
  Where elementary cellular automata have two possible values for each cell (0 or 1), 
  and rules that depend only on nearest neighbor values.
-  
- 
+   
 
  Ref:	Weisstein, Eric W. "Elementary Cellular Automaton." 
  	From MathWorld--A Wolfram Web Resource:
@@ -17,7 +16,6 @@
 #pragma once 
 #include <sstream>
 #include <cmath> 
-#include <array>
 #include "grid.h"
 //--------------------------------------------------------------------------
 // convert binary to decimal
@@ -143,12 +141,12 @@ CellularAutomata_1D::~CellularAutomata_1D()
 void Illustrator(void)
 {
 	int rule;
-	std::cout<<FGRN("Select one rule number:\n");
+	std::cout<<FYEL("Select any rule number between '0-255': (for example 90)\n");
 	std::cin>>rule;
 
 	CellularAutomata_1D test(rule);
 
-	for(int i=0; i<100;i++)
+	for(int i=0; i<30;i++)
 	{
 		test.Generate();
 		test.Draw();
