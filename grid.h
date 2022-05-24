@@ -41,16 +41,17 @@ public:
 	grid(const T *data);
 	grid(const grid<T,X,Y> &mat);
 	virtual ~grid(); 
-	
+	int GetRow() const;
+	int GetCol() const;
 	T  GetPoint(const int &row, const int &col) const;
 	T  SetPoint(const int &row, const int &col,const T &val) const;
 	grid<T,X,Y> operator= (const grid<T,X,Y> &mat);
 	template<class z,int x,int y>
 	friend bool CheckDimension(const grid<z,x,y> &mat1,const grid<z,x,y> &mat2);
-       
+	T **table;
 private:
 	int Row, Col;
-	T **table;
+	
 }; 
 //###########################################################################   
     
@@ -139,6 +140,22 @@ grid<T,X,Y>::grid(const grid<T,X,Y> &mat): Row(mat.Row), Col(mat.Col)
 	}
 }
 //---------------------------------------------------------------------------
+// GetRow
+//---------------------------------------------------------------------------
+template <class T, int X, int Y>
+int grid<T,X,Y>::GetRow() const
+{
+    return Row;
+}
+//---------------------------------------------------------------------------
+// GetCol
+//---------------------------------------------------------------------------
+template <class T, int X, int Y>
+int grid<T,X,Y>::GetCol() const
+{
+    return Col;
+}
+//---------------------------------------------------------------------------
 //  GetPoint
 //---------------------------------------------------------------------------
 template <class T, int X, int Y>
@@ -190,6 +207,26 @@ bool CheckDimension(const grid<z,x,y> &mat1,const grid<z,x,y> &mat2)
 
 	else
 		return flag;
+}
+//---------------------------------------------------------------------------
+// Overloading the insertion << operator
+//---------------------------------------------------------------------------
+template <typename U,int Q,int W>
+std::ostream& operator<<(std::ostream& output,
+const grid<U,Q,W>& mt)
+{
+//output << "[ ";
+    for(int i =0; i<mt.GetRow(); i++)
+    {
+        for(int j =0; j<mt.GetCol(); j++)
+        {
+            //output<<mt.table[i][j]<<"\t";
+            output<<mt.table[i][j];
+        }
+        output<<"\n";
+    }
+// output << "]\n";
+return output;
 }
 //---------------------------------------------------------------------------
 //  grid class destructor: where we free all allocated memories
