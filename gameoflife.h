@@ -18,15 +18,15 @@
 //###########################################################################
 class GameofLife {
 public:
-	int rows=15;
+	int rows=60;
 	GameofLife();
 	void Generate();
 	void Draw();
 	~GameofLife();
 private:
-	grid<int,15,15> Board;
-	grid<int,15,15> Next;
-	int cols=15;
+	grid<int,60,60> Board;
+	grid<int,60,60> Next;
+	int cols=20;
 };
 //###########################################################################
 
@@ -83,9 +83,9 @@ void GameofLife::Draw()
 	{
 		for ( int j = 0; j < rows; j++)
 		{
-			sleep(0.1);
+			sleep(0.01);
 			// Black when state = 1
-			if ((Board. GetPoint(i,j) == 1)) std::cout<<FYEL("#");
+			if ((Board. GetPoint(i,j) == 1)) std::cout<<FGRN("#");
 			// White when state = 0
 			else std::cout<<FBLU(".");
 		}

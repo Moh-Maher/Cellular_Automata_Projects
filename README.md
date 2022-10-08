@@ -48,6 +48,12 @@ This is a collection of c++ implementations for for the basics of Wolfram's elem
    - Staying Alive: If a cell is alive and has exactly two or three live neighbors, it stays alive.
 
    - Staying Dead: If a cell is dead and has anything other than three live neighbors, it stays dead
+   
+# Examples:
+
+- Rule 90:
+![Alt text](https://github.com/Moh-Maher/Cellular_Automata_Projects/blob/main/snaps/game.gif)
+
 ## Refrences 
 - Weisstein, Eric W. "Elementary Cellular Automaton." From MathWorld--A Wolfram Web Resource: https://mathworld.wolfram.com/ElementaryCellularAutomaton.html
 - Daniel Shiffman "The Nature of Code" https://natureofcode.com/book/chapter-7-cellular-automata/ 
