@@ -1,3 +1,10 @@
+/***********************************************************************************
+ gameoflife main file. 
+ 
+ By:  Mohammed Maher Abdelrahim Mohammed
+      SUDAN UNIVERSITY OF SCIENCE & TECHNOLOGY
+      maherali8932@gmail.com
+//****************************************************************************/
 #include"gameoflife.h"
  
 int main(){
