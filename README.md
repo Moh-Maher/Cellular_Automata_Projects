@@ -14,7 +14,8 @@ This is a collection of c++ implementations for for the basics of Wolfram's elem
 
    - Set the cell’s state to that new value.
 
-# Examples:
+# Examples: 
+compile ElementaryCA.cpp, run the executable file to select the targeted rule. 
 
 - Rule 90:
 ![Alt text](https://github.com/Moh-Maher/Cellular_Automata_Projects/blob/main/snaps/rule90.png "rule 90")
@@ -50,6 +51,7 @@ This is a collection of c++ implementations for for the basics of Wolfram's elem
    - Staying Dead: If a cell is dead and has anything other than three live neighbors, it stays dead
    
 # Example:
+- g++ GameOfLife.cpp and run the generated executable a.out file.
 
 ![Alt text](https://github.com/Moh-Maher/Cellular_Automata_Projects/blob/main/snaps/game.gif)
 
