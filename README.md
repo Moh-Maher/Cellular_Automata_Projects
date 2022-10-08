@@ -14,15 +14,19 @@ This is a collection of c++ implementations for for the basics of Wolfram's elem
 
    - Set the cell’s state to that new value.
 
-# Example: 
+# Examples:
 
+- Rule 90:
 ![Alt text](https://github.com/Moh-Maher/Cellular_Automata_Projects/blob/main/snaps/rule90.png "rule 90")
 
-![Alt text](https://github.com/Moh-Maher/Cellular_Automata_Projects/tree/main/snaps/rule126.png?raw=true "rule 126")
+- Rule 126:
+![Alt text](https://github.com/Moh-Maher/Cellular_Automata_Projects/blob/main/snaps/rule126.png "rule 126")
 
-![Alt text](https://github.com/Moh-Maher/Cellular_Automata_Projects/tree/main/snaps/rule150.png?raw=true "rule 150")
+- Rule 150:
+![Alt text](https://github.com/Moh-Maher/Cellular_Automata_Projects/blob/main/snaps/rule150.png "rule 150")
 
-![Alt text](https://github.com/Moh-Maher/Cellular_Automata_Projects/tree/main/snaps/rule182.png?raw=true "rule 182")
+- Rule 182:
+![Alt text](https://github.com/Moh-Maher/Cellular_Automata_Projects/blob/main/snaps/rule182.png "rule 182")
 
 ## Game of Life
 
