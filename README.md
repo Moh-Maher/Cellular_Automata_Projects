@@ -16,13 +16,13 @@ This is a collection of c++ implementations for for the basics of Wolfram's elem
 
 # Example: 
 
-![Alt text](https://github.com/Moh-Maher/Cellular_Automata_Projects/snaps/rule90.png?raw=true "rule 90")
+![Alt text](https://github.com/Moh-Maher/Cellular_Automata_Projects/tree/main/snaps/rule90.png?raw=true "rule 90")
 
-![Alt text](https://github.com/Moh-Maher/Cellular_Automata_Projects/snaps/rule126.png?raw=true "rule 126")
+![Alt text](https://github.com/Moh-Maher/Cellular_Automata_Projects/tree/main/snaps/rule126.png?raw=true "rule 126")
 
-![Alt text](https://github.com/Moh-Maher/Cellular_Automata_Projects/snaps/rule150.png?raw=true "rule 150")
+![Alt text](https://github.com/Moh-Maher/Cellular_Automata_Projects/tree/main/snaps/rule150.png?raw=true "rule 150")
 
-![Alt text](https://github.com/Moh-Maher/Cellular_Automata_Projects/snaps/rule182.png?raw=true "rule 182")
+![Alt text](https://github.com/Moh-Maher/Cellular_Automata_Projects/tree/main/snaps/rule182.png?raw=true "rule 182")
 
 ## Game of Life
 
